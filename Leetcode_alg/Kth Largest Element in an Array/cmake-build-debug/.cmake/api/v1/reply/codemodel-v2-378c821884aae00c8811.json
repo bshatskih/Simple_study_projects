@@ -1,0 +1,60 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.26"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "Kth_Largest_Element_in_an_Array",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "Kth_Largest_Element_in_an_Array::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Kth_Largest_Element_in_an_Array-Debug-a526dcc5118fa3f5c8e1.json",
+					"name" : "Kth_Largest_Element_in_an_Array",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Users/79102/CLionProjects/Leetcode_alg/Kth Largest Element in an Array/cmake-build-debug",
+		"source" : "C:/Users/79102/CLionProjects/Leetcode_alg/Kth Largest Element in an Array"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 5
+	}
+}

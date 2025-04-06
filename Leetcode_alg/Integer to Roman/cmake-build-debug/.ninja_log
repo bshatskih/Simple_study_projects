@@ -1,0 +1,11 @@
+# ninja log v5
+1	498	7157107033391147	CMakeFiles/Integer_to_Roman.dir/main.cpp.obj	886c93f6c8d14e56
+500	642	7157107034803381	Integer_to_Roman.exe	123c75f88ab583d5
+4	446	7157107254975561	CMakeFiles/Integer_to_Roman.dir/main.cpp.obj	886c93f6c8d14e56
+447	556	7157107256042150	Integer_to_Roman.exe	123c75f88ab583d5
+4	435	7157107359738760	CMakeFiles/Integer_to_Roman.dir/main.cpp.obj	886c93f6c8d14e56
+435	538	7157107360736185	Integer_to_Roman.exe	123c75f88ab583d5
+3	424	7157107520656048	CMakeFiles/Integer_to_Roman.dir/main.cpp.obj	886c93f6c8d14e56
+424	521	7157107521592761	Integer_to_Roman.exe	123c75f88ab583d5
+3	420	7157108664398796	CMakeFiles/Integer_to_Roman.dir/main.cpp.obj	886c93f6c8d14e56
+421	512	7157108665296000	Integer_to_Roman.exe	123c75f88ab583d5

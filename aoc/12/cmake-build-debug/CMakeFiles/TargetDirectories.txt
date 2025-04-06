@@ -1,0 +1,3 @@
+C:/Users/79102/Documents/cpp/aoc/12/cmake-build-debug/CMakeFiles/12.dir
+C:/Users/79102/Documents/cpp/aoc/12/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/79102/Documents/cpp/aoc/12/cmake-build-debug/CMakeFiles/rebuild_cache.dir

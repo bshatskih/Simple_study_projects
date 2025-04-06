@@ -1,0 +1,8 @@
+[
+{
+  "directory": "C:/Users/HP/CLionProjects/Snake_Game/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe   -g -o CMakeFiles\\Snake_Game.dir\\main.cpp.obj -c C:\\Users\\HP\\CLionProjects\\Snake_Game\\main.cpp",
+  "file": "C:/Users/HP/CLionProjects/Snake_Game/main.cpp",
+  "output": "CMakeFiles/Snake_Game.dir/main.cpp.obj"
+}
+]

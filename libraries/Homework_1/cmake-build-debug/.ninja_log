@@ -1,0 +1,22 @@
+# ninja log v5
+2	335	6870300861580182	CMakeFiles/untitled1.dir/main.cpp.obj	c4b449dd401306c8
+394	508	6870318232269856	untitled1.exe	8ecca54e2ce55fb4
+4	570	6870301854219458	CMakeFiles/untitled1.dir/LongLong.cpp.obj	5333d26cac7d448c
+5	516	6870317581075056	CMakeFiles/untitled1.dir/Money.cpp.obj	2ad34ded8ec3112b
+1	773	6870537707499126	build.ninja	2423c3f925b3702d
+4	393	6870318231147989	CMakeFiles/untitled1.dir/Application.cpp.obj	d90f23019afceb81
+3	608	6870537707499126	build.ninja	2423c3f925b3702d
+18	855	6870537718038611	CMakeFiles/untitled1.dir/main.cpp.obj	c4b449dd401306c8
+7	858	6870537718048268	CMakeFiles/untitled1.dir/Application.cpp.obj	d90f23019afceb81
+12	987	6870537719402925	CMakeFiles/untitled1.dir/Money.cpp.obj	2ad34ded8ec3112b
+987	1313	6870537722587535	untitled1.exe	8ecca54e2ce55fb4
+6	749	6870537837890563	CMakeFiles/untitled1.dir/main.cpp.obj	c4b449dd401306c8
+750	946	6870537839794592	untitled1.exe	8ecca54e2ce55fb4
+4	637	6870565939718352	CMakeFiles/untitled1.dir/main.cpp.obj	c4b449dd401306c8
+10	646	6870565939831473	CMakeFiles/untitled1.dir/Application.cpp.obj	d90f23019afceb81
+7	748	6870565940868689	CMakeFiles/untitled1.dir/Money.cpp.obj	2ad34ded8ec3112b
+748	979	6870565943157425	untitled1.exe	8ecca54e2ce55fb4
+11	620	6879621485634468	CMakeFiles/untitled1.dir/main.cpp.obj	c4b449dd401306c8
+30	670	6879621486136808	CMakeFiles/untitled1.dir/Application.cpp.obj	d90f23019afceb81
+21	946	6879621488836973	CMakeFiles/untitled1.dir/Money.cpp.obj	2ad34ded8ec3112b
+946	1256	6879621491794271	untitled1.exe	8ecca54e2ce55fb4

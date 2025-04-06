@@ -1,0 +1,24 @@
+<!DOCTYPE RCC>
+<RCC>
+    <qresource>
+        <file alias="branch-closed.png">icons/stylesheet-branch-closed.png</file>
+        <file alias="branch-end.png">icons/stylesheet-branch-end.png</file>
+        <file alias="branch-more.png">icons/stylesheet-branch-more.png</file>
+        <file alias="branch-open.png">icons/stylesheet-branch-open.png</file>
+        <file alias="vline.png">icons/stylesheet-vline.png</file>
+        <file alias="close-all.png">icons/close-all.png</file>
+        <file alias="close-document.png">icons/close-document.png</file>
+        <file alias="copy.png">icons/copy.png</file>
+        <file alias="cut.png">icons/cut.png</file>
+        <file alias="exit.png">icons/exit.png</file>
+        <file alias="new-document.png">icons/new-document.png</file>
+        <file alias="open-document.png">icons/open-document.png</file>
+        <file alias="paste.png">icons/paste.png</file>
+        <file alias="save.png">icons/save.png</file>
+        <file alias="save-all.png">icons/save-all.png</file>
+        <file alias="save-as.png">icons/save-as.png</file>
+        <file alias="select-all.png">icons/select-all.png</file>
+        <file>rules.xml</file>
+        <file>Dark.qss</file>
+    </qresource>
+</RCC>

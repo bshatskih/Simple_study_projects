@@ -1,0 +1,5 @@
+# ninja log v5
+4	1351	6752949937913981	CMakeFiles/operator_overloading.dir/operator_overloading/Main.cpp.obj	ae4b2382b90874a6
+52	1442	6752949939201229	CMakeFiles/operator_overloading.dir/operator_overloading/Vector.cpp.obj	8e0fe3b9c3df54e1
+41	1451	6752949939301351	CMakeFiles/operator_overloading.dir/operator_overloading/Matrix.cpp.obj	48da50d0f5cc4189
+1452	2335	6752949948159887	operator_overloading.exe	6a3f5e63f053b07f

@@ -1,0 +1,3 @@
+C:/Users/79102/Documents/cpp/Leetcode_alg/Minimum Number of Operations to Move All Balls to Each Box/cmake-build-debug/CMakeFiles/Minimum_Number_of_Operations_to_Move_All_Balls_to_Each_Box.dir
+C:/Users/79102/Documents/cpp/Leetcode_alg/Minimum Number of Operations to Move All Balls to Each Box/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/79102/Documents/cpp/Leetcode_alg/Minimum Number of Operations to Move All Balls to Each Box/cmake-build-debug/CMakeFiles/rebuild_cache.dir

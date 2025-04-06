@@ -1,0 +1,3 @@
+C:/Users/79102/CLionProjects/Leetcode_alg/Spiral Matrix/cmake-build-debug/CMakeFiles/Spiral_Matrix.dir
+C:/Users/79102/CLionProjects/Leetcode_alg/Spiral Matrix/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/79102/CLionProjects/Leetcode_alg/Spiral Matrix/cmake-build-debug/CMakeFiles/rebuild_cache.dir

@@ -1,0 +1,10 @@
+# ninja log v5
+7	409	7170725018017807	Calculator_autogen/timestamp	831b1b4e88d42bf7
+7	409	7170725018017807	Calculator_autogen/mocs_compilation.cpp	831b1b4e88d42bf7
+7	409	7170725018017807	C:/Users/79102/CLionProjects/Calculator/cmake-build-debug/Calculator_autogen/mocs_compilation.cpp	831b1b4e88d42bf7
+7	409	7170725018017807	C:/Users/79102/CLionProjects/Calculator/cmake-build-debug/Calculator_autogen/timestamp	831b1b4e88d42bf7
+419	4340	7170725057353994	CMakeFiles/Calculator.dir/main.cpp.obj	d90f4f69381b25d2
+4343	5637	7170725060723628	Calculator.exe	cc66fc17d31f4534
+410	676	7170725020672534	CMakeFiles/Calculator.dir/Calculator_autogen/mocs_compilation.cpp.obj	10001534207420b5
+429	609	7170725019764239	CMakeFiles/Calculator.dir/Calculator.cpp.obj	483c8811b365993d
+12	1103	7171821485924450	build.ninja	b070fe029c966aa4

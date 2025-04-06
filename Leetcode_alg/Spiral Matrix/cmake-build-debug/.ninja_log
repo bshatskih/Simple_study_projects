@@ -1,0 +1,27 @@
+# ninja log v5
+8	1158	7081259334070327	CMakeFiles/Spiral_Matrix.dir/main.cpp.obj	77d2374b55ebc4a3
+1159	1337	7081259335834448	Spiral_Matrix.exe	8c8476e2b2169d26
+2	869	7195368795664477	CMakeFiles/Spiral_Matrix.dir/main.cpp.obj	a88543808b4ccd7b
+871	1017	7195368797120583	Spiral_Matrix.exe	a359bf66657e355e
+6	769	7195368945122835	CMakeFiles/Spiral_Matrix.dir/main.cpp.obj	a88543808b4ccd7b
+769	903	7195368946429335	Spiral_Matrix.exe	a359bf66657e355e
+3	611	7195370265312175	CMakeFiles/Spiral_Matrix.dir/main.cpp.obj	a88543808b4ccd7b
+615	741	7195370266575581	Spiral_Matrix.exe	a359bf66657e355e
+3	607	7196005145694575	CMakeFiles/Spiral_Matrix.dir/main.cpp.obj	a88543808b4ccd7b
+608	731	7196005146905308	Spiral_Matrix.exe	a359bf66657e355e
+3	560	7196008426351237	CMakeFiles/Spiral_Matrix.dir/main.cpp.obj	a88543808b4ccd7b
+561	668	7196008427395555	Spiral_Matrix.exe	a359bf66657e355e
+3	584	7196009172164073	CMakeFiles/Spiral_Matrix.dir/main.cpp.obj	a88543808b4ccd7b
+585	690	7196009173203847	Spiral_Matrix.exe	a359bf66657e355e
+4	627	7196010574460180	CMakeFiles/Spiral_Matrix.dir/main.cpp.obj	a88543808b4ccd7b
+627	745	7196010575596511	Spiral_Matrix.exe	a359bf66657e355e
+3	644	7196011012327714	CMakeFiles/Spiral_Matrix.dir/main.cpp.obj	a88543808b4ccd7b
+645	761	7196011013466069	Spiral_Matrix.exe	a359bf66657e355e
+6	622	7196011150983521	CMakeFiles/Spiral_Matrix.dir/main.cpp.obj	a88543808b4ccd7b
+622	753	7196011152307283	Spiral_Matrix.exe	a359bf66657e355e
+4	607	7196011773697388	CMakeFiles/Spiral_Matrix.dir/main.cpp.obj	a88543808b4ccd7b
+607	718	7196011774786896	Spiral_Matrix.exe	a359bf66657e355e
+3	601	7196013394641635	CMakeFiles/Spiral_Matrix.dir/main.cpp.obj	a88543808b4ccd7b
+602	710	7196013395685251	Spiral_Matrix.exe	a359bf66657e355e
+3	573	7196013581032819	CMakeFiles/Spiral_Matrix.dir/main.cpp.obj	a88543808b4ccd7b
+574	683	7196013582103161	Spiral_Matrix.exe	a359bf66657e355e

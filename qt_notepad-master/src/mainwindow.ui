@@ -1,0 +1,668 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>mainwindow</class>
+ <widget class="QMainWindow" name="mainwindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1025</width>
+    <height>839</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>mainwindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="FileTabWidget" name="tabWidget">
+      <property name="tabsClosable">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1025</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="filemenu">
+    <property name="title">
+     <string>Файл</string>
+    </property>
+    <addaction name="newdoc"/>
+    <addaction name="opendoc"/>
+    <addaction name="savedoc"/>
+    <addaction name="saveas"/>
+    <addaction name="saveall"/>
+    <addaction name="close"/>
+    <addaction name="closeall"/>
+    <addaction name="quit"/>
+   </widget>
+   <widget class="QMenu" name="editmenu">
+    <property name="title">
+     <string>Правка</string>
+    </property>
+    <addaction name="cut"/>
+    <addaction name="copy"/>
+    <addaction name="paste"/>
+    <addaction name="selectall"/>
+   </widget>
+   <widget class="QMenu" name="viewmenu">
+    <property name="title">
+     <string>Вид</string>
+    </property>
+    <addaction name="showfilesystem"/>
+    <addaction name="showopened"/>
+    <addaction name="changetheme"/>
+   </widget>
+   <addaction name="filemenu"/>
+   <addaction name="editmenu"/>
+   <addaction name="viewmenu"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QDockWidget" name="fileSystemDock">
+   <property name="features">
+    <set>QDockWidget::DockWidgetClosable|QDockWidget::DockWidgetMovable</set>
+   </property>
+   <property name="windowTitle">
+    <string>Проводник</string>
+   </property>
+   <attribute name="dockWidgetArea">
+    <number>1</number>
+   </attribute>
+   <widget class="QWidget" name="dockWidgetContents_2">
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_2">
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <item>
+        <widget class="QPushButton" name="goUpDir">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="text">
+          <string>      ..      </string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="currentDirLabel">
+         <property name="text">
+          <string>CurrentDirectory</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeType">
+          <enum>QSizePolicy::Expanding</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <widget class="QTreeView" name="fileSystem">
+       <attribute name="headerCascadingSectionResizes">
+        <bool>true</bool>
+       </attribute>
+       <attribute name="headerStretchLastSection">
+        <bool>false</bool>
+       </attribute>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QDockWidget" name="openedFilesDock">
+   <property name="features">
+    <set>QDockWidget::DockWidgetClosable|QDockWidget::DockWidgetMovable</set>
+   </property>
+   <property name="windowTitle">
+    <string>Открытые файлы</string>
+   </property>
+   <attribute name="dockWidgetArea">
+    <number>2</number>
+   </attribute>
+   <widget class="QWidget" name="dockWidgetContents">
+    <layout class="QVBoxLayout" name="verticalLayout_2">
+     <item>
+      <widget class="QListView" name="openedFilesList">
+       <property name="editTriggers">
+        <set>QAbstractItemView::NoEditTriggers</set>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <action name="newdoc">
+   <property name="icon">
+    <iconset theme="document-new">
+     <normaloff>.</normaloff>.</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Новый</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+N</string>
+   </property>
+  </action>
+  <action name="opendoc">
+   <property name="icon">
+    <iconset theme="document-open">
+     <normaloff>.</normaloff>.</iconset>
+   </property>
+   <property name="text">
+    <string>Открыть</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+O</string>
+   </property>
+  </action>
+  <action name="savedoc">
+   <property name="icon">
+    <iconset theme="document-save">
+     <normaloff>.</normaloff>.</iconset>
+   </property>
+   <property name="text">
+    <string>Сохранить</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+S</string>
+   </property>
+  </action>
+  <action name="saveas">
+   <property name="icon">
+    <iconset theme="document-save-as">
+     <normaloff>.</normaloff>.</iconset>
+   </property>
+   <property name="text">
+    <string>Сохранить как</string>
+   </property>
+  </action>
+  <action name="saveall">
+   <property name="icon">
+    <iconset theme="document-save">
+     <normaloff>.</normaloff>.</iconset>
+   </property>
+   <property name="text">
+    <string>Сохранить всё</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Shift+S</string>
+   </property>
+  </action>
+  <action name="close">
+   <property name="icon">
+    <iconset theme="document-revert">
+     <normaloff>.</normaloff>.</iconset>
+   </property>
+   <property name="text">
+    <string>Закрыть</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+W</string>
+   </property>
+  </action>
+  <action name="quit">
+   <property name="icon">
+    <iconset theme="application-exit">
+     <normaloff>.</normaloff>.</iconset>
+   </property>
+   <property name="text">
+    <string>Выход</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Q</string>
+   </property>
+  </action>
+  <action name="closeall">
+   <property name="text">
+    <string>Закрыть все</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Shift+W</string>
+   </property>
+  </action>
+  <action name="cut">
+   <property name="icon">
+    <iconset theme="edit-cut">
+     <normaloff>.</normaloff>.</iconset>
+   </property>
+   <property name="text">
+    <string>Вырезать</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+X</string>
+   </property>
+  </action>
+  <action name="copy">
+   <property name="icon">
+    <iconset theme="edit-copy">
+     <normaloff>.</normaloff>.</iconset>
+   </property>
+   <property name="text">
+    <string>Копировать</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+C</string>
+   </property>
+  </action>
+  <action name="paste">
+   <property name="icon">
+    <iconset theme="edit-paste">
+     <normaloff>.</normaloff>.</iconset>
+   </property>
+   <property name="text">
+    <string>Вставить</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+V</string>
+   </property>
+  </action>
+  <action name="selectall">
+   <property name="icon">
+    <iconset theme="edit-select-all">
+     <normaloff>.</normaloff>.</iconset>
+   </property>
+   <property name="text">
+    <string>Выделить всё</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+A</string>
+   </property>
+  </action>
+  <action name="showfilesystem">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Показать проводник</string>
+   </property>
+  </action>
+  <action name="showopened">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Показать обозреватель открытых документов</string>
+   </property>
+  </action>
+  <action name="changetheme">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Темная тема</string>
+   </property>
+  </action>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>FileTabWidget</class>
+   <extends>QTabWidget</extends>
+   <header>fileTabWidget.h</header>
+   <container>1</container>
+   <slots>
+    <slot>closeByIndex(int)</slot>
+   </slots>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>fileSystem</sender>
+   <signal>doubleClicked(QModelIndex)</signal>
+   <receiver>mainwindow</receiver>
+   <slot>onFilesystemDoubleClicked(QModelIndex)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>137</x>
+     <y>410</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>481</x>
+     <y>394</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>tabWidget</sender>
+   <signal>tabCloseRequested(int)</signal>
+   <receiver>tabWidget</receiver>
+   <slot>closeByIndex(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>650</x>
+     <y>421</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>650</x>
+     <y>421</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>newdoc</sender>
+   <signal>triggered()</signal>
+   <receiver>mainwindow</receiver>
+   <slot>newDocument()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>512</x>
+     <y>419</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>opendoc</sender>
+   <signal>triggered()</signal>
+   <receiver>mainwindow</receiver>
+   <slot>openDocument()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>512</x>
+     <y>419</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>savedoc</sender>
+   <signal>triggered()</signal>
+   <receiver>mainwindow</receiver>
+   <slot>saveDocument()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>512</x>
+     <y>419</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>saveas</sender>
+   <signal>triggered()</signal>
+   <receiver>mainwindow</receiver>
+   <slot>saveDocumentAs()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>512</x>
+     <y>419</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>saveall</sender>
+   <signal>triggered()</signal>
+   <receiver>mainwindow</receiver>
+   <slot>saveAllDocuments()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>512</x>
+     <y>419</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>close</sender>
+   <signal>triggered()</signal>
+   <receiver>mainwindow</receiver>
+   <slot>closeDocument()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>512</x>
+     <y>419</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>quit</sender>
+   <signal>triggered()</signal>
+   <receiver>mainwindow</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>512</x>
+     <y>419</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>cut</sender>
+   <signal>triggered()</signal>
+   <receiver>mainwindow</receiver>
+   <slot>cut()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>512</x>
+     <y>419</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>copy</sender>
+   <signal>triggered()</signal>
+   <receiver>mainwindow</receiver>
+   <slot>copy()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>512</x>
+     <y>419</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>paste</sender>
+   <signal>triggered()</signal>
+   <receiver>mainwindow</receiver>
+   <slot>paste()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>512</x>
+     <y>419</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>selectall</sender>
+   <signal>triggered()</signal>
+   <receiver>mainwindow</receiver>
+   <slot>selectAll()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>512</x>
+     <y>419</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>closeall</sender>
+   <signal>triggered()</signal>
+   <receiver>mainwindow</receiver>
+   <slot>closeAllDocuments()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>512</x>
+     <y>419</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>showfilesystem</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>fileSystemDock</receiver>
+   <slot>setVisible(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>147</x>
+     <y>421</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>showopened</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>openedFilesDock</receiver>
+   <slot>setVisible(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>908</x>
+     <y>421</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>openedFilesList</sender>
+   <signal>doubleClicked(QModelIndex)</signal>
+   <receiver>mainwindow</receiver>
+   <slot>onFilesystemDoubleClicked(QModelIndex)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>908</x>
+     <y>434</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>512</x>
+     <y>419</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>goUpDir</sender>
+   <signal>clicked()</signal>
+   <receiver>mainwindow</receiver>
+   <slot>goToParentDirectory()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>49</x>
+     <y>65</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>512</x>
+     <y>419</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>changetheme</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>mainwindow</receiver>
+   <slot>changeTheme(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>512</x>
+     <y>419</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>onFilesystemDoubleClicked(QModelIndex)</slot>
+  <slot>newDocument()</slot>
+  <slot>openDocument()</slot>
+  <slot>saveDocument()</slot>
+  <slot>saveDocumentAs()</slot>
+  <slot>saveAllDocuments()</slot>
+  <slot>closeDocument()</slot>
+  <slot>closeAllDocuments()</slot>
+  <slot>quit()</slot>
+  <slot>cut()</slot>
+  <slot>copy()</slot>
+  <slot>paste()</slot>
+  <slot>remove()</slot>
+  <slot>selectAll()</slot>
+  <slot>showFilesystemExplorer()</slot>
+  <slot>showOpenedFilesExplorer()</slot>
+  <slot>updateExplorerStates()</slot>
+  <slot>goToParentDirectory()</slot>
+  <slot>changeTheme(bool)</slot>
+ </slots>
+</ui>
