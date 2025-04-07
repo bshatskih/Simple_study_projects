@@ -63,7 +63,7 @@ class Snake {
         } else {
           GAME_CONTINUES = false;
           gotoxy(0, 11);
-          std::cout << "YOU LOSE FUCKING DUMB\n";
+          std::cout << "YOU LOSE\n";
         }
       }
     }
